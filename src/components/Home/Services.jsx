@@ -46,7 +46,7 @@ export default function Services() {
                 <h1 className="main__titLe"> خدماتنا  <span></span> <span></span>  </h1>
                 <div className="grid grid-cols-3 gap-7  max-[992px]:grid-cols-2  max-[767px]:grid-cols-1">
                     {SERVICES.map((service) => (
-                        <div key={service.id} className="overflow-hidden  bg-[#EEE] shadow-sm transition-transform duration-200 animation__service">
+                        <div key={service.id} className="overflow-hidden select-none bg-[#EEE] shadow-sm transition-transform duration-200 animation__service">
                             <span className="block text-color-main my-4 mb-2 m-auto w-fit">{service.icon}</span>
                             <div className="p-5">
                                 <h4 className="text-custom-bg font-bold text-xl mb-1">{service.title}</h4>
