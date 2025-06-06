@@ -63,9 +63,21 @@ export default function Navbar() {
 
         <button className="hidden max-[992px]:block w-10 h-5 bg-white relative"
           onClick={handleToggle}>
-          <span className="absolute left-0 w-full h-[3px] bg-red-500 top-0"></span>
-          <span className="absolute left-0 w-full h-[3px] bg-red-500 top-2"></span>
-          <span className="absolute left-0 w-full h-[3px] bg-red-500 top-4"></span>
+          <span
+            className={`absolute left-0 w-full h-[3px] bg-red-500 top-0 transition-all duration-300
+              ${toggle ? "rotate-[45deg] top-2" : ""}
+            `}
+          ></span>
+          <span
+            className={`absolute left-0 w-full h-[3px] bg-red-500 top-2 transition-all duration-300
+              ${toggle ? "opacity-0" : ""}
+            `}
+          ></span>
+          <span
+            className={`absolute left-0 w-full h-[3px] bg-red-500 top-4 transition-all duration-300
+              ${toggle ? "-rotate-[45deg] !top-2" : ""}
+            `}
+          ></span>
         </button>
 
         
