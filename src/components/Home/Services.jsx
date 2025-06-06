@@ -51,7 +51,6 @@ export default function Services() {
                             <div className="p-5">
                                 <h4 className="text-custom-bg font-bold text-xl mb-1">{service.title}</h4>
                                 <p className="leading-6 text-lg mt-2">{service.description}</p>
-                                <Link to="/course" className="block mt-3 text-color-main font-semibold hover:underline rounded-md cursor-pointer w-fit transition duration-200 hover:rounded-sm"> عن الدورة </Link>
                             </div>
                         </div>
                     ))}

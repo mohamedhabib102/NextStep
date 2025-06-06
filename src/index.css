@@ -63,17 +63,21 @@ html{
 .animation__service{
   position: relative;
   z-index: 1;
+  &:hover{
+    border-radius: 3px;
+  }
   &::before{
     content: "";
     position: absolute;
-    width: calc(100% - 10px);
-    height: calc(100% - 10px);
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
     background-color: #f3552538;
     top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     transition: 0.3s;
     z-index: -1;
+    border-radius: 3px;
   }
   &:hover{
     &::before{
