@@ -9,9 +9,9 @@ export default function Landing() {
                              اكتشف عالم البرمجة والتقنية من خلال كورسات مجانية وعملية مقدمة من فريقنا المتخصص
                             نوفر محتوى سهل واضح ومناسب لكل المستويات، علشان تبدأ رحلتك بثقة واحترافية.
                         </p>
-                        <a href="#articles" className="absolute left-1/2 -translate-x-1/2 bottom-8 text-custom-bg button__started"><i className="fas fa-angle-double-down fa-2x"></i></a>
+                        <a href="#services" className="absolute left-1/2 -translate-x-1/2 bottom-8 text-custom-bg button__started"><i className="fas fa-angle-double-down fa-2x"></i></a>
                     </div>
-                    <img src="./images/landing.png" alt="landing" className="max-w-[500px] max-[992px]:hidden relative image__landing"/>
+                    <img src="./images/landing.png" alt="landing" className="max-w-[400px] max-[992px]:hidden relative image__landing"/>
                 </div>
             </div>
         </section>

@@ -10,6 +10,10 @@ body {
   background-color: #f5f5f5;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 
 :root {
 --bg-main: #013d64;
@@ -56,6 +60,27 @@ body {
 }
 
 
+.animation__service{
+  position: relative;
+  z-index: 1;
+  &::before{
+    content: "";
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: #f3552538;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.3s;
+    z-index: -1;
+  }
+  &:hover{
+    &::before{
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+}
 
 /* custom animations */
 
@@ -69,6 +94,63 @@ body {
 }
 
 
+.main__titLe{
+  position: relative;
+  width: fit-content;
+  margin: 32px auto;
+  font-size: 48px;
+  span{
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: var(--color-active);
+    transform: translateY(-50%);
+    top: 50%;
+  }
+  span:first-child{
+    left: -40px;
+  }
+  span:last-child{
+    right: -40px; 
+  }
+}
+
+
+@media (max-width: 992px) {
+  .show{
+  position: absolute;
+  top: 95px;
+  background-color: white;
+  width: 100%;
+  left: 0;
+  padding: 20px 15px;
+  flex-direction: column;
+  ul{
+    width: 100%;
+    display: block;
+    li a{
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  button{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--bg-main);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+      background-color: var(--color-active);
+    }
+  }
+}
+}
+
+/* custom animations */
 @keyframes top-button{
   0%, 10%, 20%, 50%, 80%, 100%{
     transform: translateY(0);
