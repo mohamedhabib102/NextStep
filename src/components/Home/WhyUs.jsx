@@ -49,7 +49,7 @@ export default function WhyUs() {
                  <h1 className="main__titLe"> ليه تتعلم معانا؟ - Why Us <span></span> <span></span>  </h1>
                  <div className="">
                     {features.map((serve) => (
-                        <div onClick={() => setShow(serve.id)}  
+                        <div onClick={() => setShow(serve.id)} key={serve.id}  
                         className={`mb-6 duration-150 rounded-lg bg-white last:mb-0 p-5 ${active === serve.id ? "max-h-[500px]" : "max-h-[90px]"}`}>
                             <div className="flex bg-[#EEE] p-3 text-white justify-between items-center rounded-md">
                               <div className="flex items-center gap-3 flex-row-reverse">

@@ -103,8 +103,10 @@ html{
   width: fit-content;
   margin: 40px auto;
   font-size: 48px;
+  font-weight: bold;
   user-select: none;
   text-align: center;
+  color: var(--bg-main);
   span{
     position: absolute;
     width: 23px;
