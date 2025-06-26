@@ -29,7 +29,7 @@ export default function Navbar() {
   }
   //`
   return(
-    <header className={`py-4 px-7  bg-[#fff] z-50 transition-all duration-300   ${header ? 'fixeds top-0 left-0 w-full shadow-md translate-y-0' : 'relative -translate-y-2 py-3'} `}>
+    <header className={`py-4 px-7  bg-[#fff] z-50 transition-all duration-300   ${header ? 'fixed top-0 left-0 w-full shadow-md translate-y-0' : 'relative -translate-y-2 py-3'} `}>
       <div className="custom__container">
             <nav className="flex items-center justify-between">
         <Link>
