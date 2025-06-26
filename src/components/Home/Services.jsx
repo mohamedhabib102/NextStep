@@ -13,24 +13,18 @@ const SERVICES = [
   },
   {
     id: 2,
-    title: "أساسيات البرمجة",
-    description: "نوفر دورات تأسيسية شاملة لتعلّم البرمجة، لبناء قاعدة قوية تُسهّل دخولك عالم التطوير.",
-    icon: <FaCode size={50} />
-  },
-  {
-    id: 3,
     title: "تصميم UI/UX",
     description: "نبتكر واجهات وتجارب مستخدم بصرية فعالة وسهلة الاستخدام، تركز على راحة المستخدم ووضوح التصميم.",
     icon: <FaPalette size={50} />
   },
   {
-    id: 4,
+    id: 3,
     title: "تطوير الخوادم (Backend)",
     description: "نطوّر أنظمة خلفية قوية وآمنة، تضمن أداءً عاليًا وتكاملًا مرنًا مع الواجهات والتطبيقات المختلفة.",
     icon: <FaServer size={50} />
   },
   {
-    id: 5,
+    id: 4,
     title: "تحسين محركات البحث (SEO)",
     description: "نحسّن ترتيب موقعك في نتائج البحث لزيادة الظهور، جذب الزوار، وتعزيز فرصك التسويقية.",
     icon: <FaSearch size={50} />
@@ -43,7 +37,7 @@ export default function Services() {
         
         <section className="pt-24 pb-20" id="services">
             <div className="custom__container">
-                <h1 className="main__titLe"> خدماتنا  <span></span> <span></span>  </h1>
+                <h1 className="main__titLe"> خدماتنا - Services <span></span> <span></span>  </h1>
                 <div className="grid grid-cols-3 gap-7  max-[992px]:grid-cols-2  max-[767px]:grid-cols-1">
                     {SERVICES.map((service) => (
                         <div key={service.id} className="overflow-hidden select-none bg-[#EEE] shadow-sm transition-transform duration-200 animation__service">
